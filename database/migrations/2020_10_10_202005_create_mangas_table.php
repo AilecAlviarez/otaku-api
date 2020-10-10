@@ -14,7 +14,7 @@ class CreateMangasTable extends Migration
     public function up()
     {
         Schema::create('mangas', function (Blueprint $table) {
-            $table->id('mange_id');
+            $table->id('manga_id');
             $table->unsignedBigInteger("chapter_id");
             $table->unsignedBigInteger("author_id");
             $table->unsignedBigInteger("publisher_id");
