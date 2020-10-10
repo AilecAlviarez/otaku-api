@@ -14,7 +14,14 @@ class CreateChaptersTable extends Migration
     public function up()
     {
         Schema::create('chapters', function (Blueprint $table) {
-            $table->id();
+            $table->id("chapter_id");
+            $table->string("chapter_name");
+            $table->string("chapter_description");
+            $table->date('chapter_date');
+            $table->unsignedBigInteger("image_id");
+            $table->unsignedBigInteger("comment_id");
+            $table->foreign('image_id')->on('images')->references('image_id');
+            $table->foreign('comment_id')->on('comments')->references('comment_id');
             $table->timestamps();
         });
     }

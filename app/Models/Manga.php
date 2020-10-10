@@ -22,4 +22,5 @@ class Manga extends Model
     public function Chapters(){
         return $this->hasMany(Chapter::class,'chapter_id','chapter_id');
     }
+    protected $casts=['manga_date'=>"datetime:Y-m-d"];
 }

@@ -16,4 +16,5 @@ class Chapter extends Model
     public function Comments(){
         return $this->hasMany(Comment::class,'comment_id','comment_id');
     }
+    protected $casts=['chapter_date'=>'datetime:Y-m-d'];
 }
