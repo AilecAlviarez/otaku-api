@@ -4,6 +4,7 @@ namespace Database\Factories;
 
 use App\Models\Comment;
 use App\Models\Reader;
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class CommentFactory extends Factory
@@ -23,8 +24,8 @@ class CommentFactory extends Factory
     public function definition()
     {
         return [
-            "comment"=>Comment::all()->random()->get()->comment_id,
-            "reader_id"=>Reader::all()->random()->get()->user_id
+            "comment"=>$this->faker->paragraph(1),
+            "reader_id"=>User::all()->random()->user_id
         ];
     }
 }

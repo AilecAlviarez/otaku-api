@@ -19,6 +19,9 @@ class Manga extends Model
     public function Author(){
         return $this->hasOne(Author::class,'author_id','author_id');
     }
+    public function reader_mangas(){
+        return $this->belongsToMany(Reader::class,'reader_manga','manga_id','reader_id');
+    }
     public function Chapters(){
         return $this->hasMany(Chapter::class,'chapter_id','chapter_id');
     }

@@ -2,7 +2,12 @@
 
 namespace Database\Factories;
 
+use App\Models\Author;
+use App\Models\Chapter;
+use App\Models\Comment;
 use App\Models\Manga;
+use App\Models\Publisher;
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class MangaFactory extends Factory
@@ -22,7 +27,12 @@ class MangaFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'author_id'=>Author::all()->random()->author_id,
+            'chapter_id'=>Chapter::all()->random()->chapter_id,
+            'manga_description'=>$this->faker->paragraph(1),
+            'manga_date'=>$this->faker->date('Y-m-d'),
+            'publisher_id'=>User::all()->random()->user_id,
+            'comment_id'=>Comment::all()->random()->comment_id
         ];
     }
 }
