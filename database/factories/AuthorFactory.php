@@ -22,7 +22,8 @@ class AuthorFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'author_name'=>$this->faker->randomElement(['manga1.png','manga2.jpg','manga3.jpg','manga4.png'])
+            ,'author_link'=>$this->faker->url
         ];
     }
 }

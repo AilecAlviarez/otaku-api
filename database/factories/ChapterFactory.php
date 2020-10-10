@@ -3,6 +3,8 @@
 namespace Database\Factories;
 
 use App\Models\Chapter;
+use App\Models\Comment;
+use App\Models\Image;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class ChapterFactory extends Factory
@@ -22,7 +24,11 @@ class ChapterFactory extends Factory
     public function definition()
     {
         return [
-            //
+            "chapter_name"=>$this->faker->name,
+            'chapter_description'=>$this->faker->paragraph(1),
+            'chapter_date'=>$this->faker->date('Y-m-d'),
+            'image_id'=>Image::all()->random()->get()->image_id,
+            'comment_id'=>Comment::all()->random()->get()->comment_id
         ];
     }
 }

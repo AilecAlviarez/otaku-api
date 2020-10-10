@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Comment;
+use App\Models\Reader;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class CommentFactory extends Factory
@@ -22,7 +23,8 @@ class CommentFactory extends Factory
     public function definition()
     {
         return [
-            //
+            "comment"=>Comment::all()->random()->get()->comment_id,
+            "reader_id"=>Reader::all()->random()->get()->user_id
         ];
     }
 }
