@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c03c29dc-3a58-415f-aa5f-0558f19305d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Repositories/AppRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/ApiService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Traits/ApiResponser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/interfaces/IRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/PublisherRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/PublisherService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +164,7 @@
       <updated>1602360859429</updated>
       <workItem from="1602360860523" duration="11683000" />
       <workItem from="1602426782996" duration="599000" />
-      <workItem from="1602433214341" duration="3275000" />
+      <workItem from="1602433214341" duration="4058000" />
     </task>
     <servers />
   </component>
@@ -179,10 +176,10 @@
       <screen x="0" y="0" width="1366" height="731" />
     </state>
     <state x="463" y="123" width="428" height="484" key="FileChooserDialogImpl/0.0.1366.731@0.0.1366.731" timestamp="1602373062743" />
-    <state x="449" y="86" width="497" height="558" key="NewPhpClassDialog" timestamp="1602435117344">
+    <state x="449" y="86" width="497" height="558" key="NewPhpClassDialog" timestamp="1602437486329">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state x="449" y="86" width="497" height="558" key="NewPhpClassDialog/0.0.1366.731@0.0.1366.731" timestamp="1602435117344" />
+    <state x="449" y="86" width="497" height="558" key="NewPhpClassDialog/0.0.1366.731@0.0.1366.731" timestamp="1602437486329" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
