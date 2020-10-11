@@ -16,7 +16,7 @@ class AppRepository implements IRepository
     public $model;
   public function __construct($model)
   {
-      $this->model=$model;
+        $this->model=$model;
   }
   public function deleteOne(Model $model)
   {
@@ -33,7 +33,7 @@ class AppRepository implements IRepository
   {
       // TODO: Implement showAll() method.
       $collection=$this->model->all();
-      return $this->responseCollection($collection);
+      return $this->responseSuccesfully($collection);
   }
   public function store(Request $request)
   {
