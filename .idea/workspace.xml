@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c03c29dc-3a58-415f-aa5f-0558f19305d8" name="Default Changelist" comment="" />
+    <list default="true" id="c03c29dc-3a58-415f-aa5f-0558f19305d8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Repositories/AppRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/ApiService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Traits/ApiResponser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/interfaces/IRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -129,6 +139,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1ihXaFbUYJQP94V0MifBqlA3EGV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -136,7 +147,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../apiLaravel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../geosam-master" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -154,7 +165,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602360859429</updated>
-      <workItem from="1602360860523" duration="10340000" />
+      <workItem from="1602360860523" duration="11683000" />
+      <workItem from="1602426782996" duration="599000" />
+      <workItem from="1602433214341" duration="3275000" />
     </task>
     <servers />
   </component>
@@ -162,13 +175,24 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="123" width="428" height="484" key="FileChooserDialogImpl" timestamp="1602371804952">
+    <state x="463" y="123" width="428" height="484" key="FileChooserDialogImpl" timestamp="1602373062743">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state x="463" y="123" width="428" height="484" key="FileChooserDialogImpl/0.0.1366.731@0.0.1366.731" timestamp="1602371804952" />
-    <state x="449" y="86" width="455" height="558" key="NewPhpClassDialog" timestamp="1602369498507">
+    <state x="463" y="123" width="428" height="484" key="FileChooserDialogImpl/0.0.1366.731@0.0.1366.731" timestamp="1602373062743" />
+    <state x="449" y="86" width="497" height="558" key="NewPhpClassDialog" timestamp="1602435117344">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state x="449" y="86" width="455" height="558" key="NewPhpClassDialog/0.0.1366.731@0.0.1366.731" timestamp="1602369498507" />
+    <state x="449" y="86" width="497" height="558" key="NewPhpClassDialog/0.0.1366.731@0.0.1366.731" timestamp="1602435117344" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/Controller.php</url>
+          <line>4</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
