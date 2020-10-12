@@ -26,5 +26,8 @@ trait ApiResponser
     public function responseInstance(Model $instance){
         return $this->responseSuccesfully($instance);
     }
+    public function validatioError($errors,$code=403){
+        return $this->responseSuccesfully($errors,$code);
+    }
 
 }

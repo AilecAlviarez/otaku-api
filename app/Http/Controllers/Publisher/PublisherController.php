@@ -11,6 +11,11 @@ use Illuminate\Http\Request;
 
 class PublisherController extends ApiController
 {
+    public $rules=[
+      'username'=>'required|string'  ,
+        'user_password'=>'required|min:6',
+        'user_email'=>'required'
+    ];
     public function __construct(PublisherService $service)
     {
         parent::__construct($service);
@@ -26,15 +31,7 @@ class PublisherController extends ApiController
         return $this->service->showAll();
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
+
 
     /**
      * Store a newly created resource in storage.
@@ -44,7 +41,8 @@ class PublisherController extends ApiController
      */
     public function store(Request $request)
     {
-        //
+        $validator=$this->validateRequest($request);
+       return (!$validator)?$this->service->store($request):$validator;
     }
 
     /**
@@ -58,16 +56,7 @@ class PublisherController extends ApiController
         return $this->service->showOne($publisher);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Publisher  $publisher
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Publisher $publisher)
-    {
-        //
-    }
+
 
     /**
      * Update the specified resource in storage.
@@ -78,7 +67,9 @@ class PublisherController extends ApiController
      */
     public function update(Request $request, Publisher $publisher)
     {
-        //
+        $validator=$this->validateRequest($request);
+        return (!$validator)?$this->service->updateOne($publisher,$request):$validator;
+
     }
 
     /**
@@ -89,6 +80,6 @@ class PublisherController extends ApiController
      */
     public function destroy(Publisher $publisher)
     {
-        //
+        return $this->service->deleteOne($publisher);
     }
 }

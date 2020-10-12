@@ -16,6 +16,7 @@ class ApiService
         $this->repository=$repository;
         $this->model=$this->repository->model;
     }
+
     public function showAll(){
         return $this->repository->showAll();
     }
@@ -27,6 +28,9 @@ class ApiService
     }
     public function updateOne($instance,Request $request){
         return $this->repository->updateOne($instance,$request);
+    }
+    public function store($request){
+        return $this->repository->store($request);
     }
 
 }
