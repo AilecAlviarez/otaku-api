@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Chapter;
 use App\Models\Comment;
 use App\Models\Reader;
 use App\Models\User;
@@ -25,7 +26,8 @@ class CommentFactory extends Factory
     {
         return [
             "comment"=>$this->faker->paragraph(1),
-            "reader_id"=>User::all()->random()->user_id
+            "reader_id"=>User::all()->random()->user_id,
+            'chapter_id'=>Chapter::all()->random()->chapter_id
         ];
     }
 }

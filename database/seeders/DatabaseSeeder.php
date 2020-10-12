@@ -33,10 +33,11 @@ class DatabaseSeeder extends Seeder
         User::factory(100)->create();
         Author::factory(20)->create();
         Image::factory(400)->create();
-        Comment::factory(500)->create();
-        CommentManga::factory(200)->create();
         Chapter::factory(960)->create();
         Manga::factory(50)->create();
+        Comment::factory(500)->create();
+        CommentManga::factory(200)->create();
+
 
     }
 }

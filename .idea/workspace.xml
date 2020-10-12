@@ -2,16 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c03c29dc-3a58-415f-aa5f-0558f19305d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Repositories/MangaRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/MangaService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Publisher/PublisherController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Publisher/PublisherController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Chapter.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Chapter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/CommentManga.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/CommentManga.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Manga.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Manga.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/AppRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/AppRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/ChapterService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/ChapterService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/MangaRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/MangaRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/MangaService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/MangaService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Services/PublisherService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/PublisherService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/ChapterFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ChapterFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/CommentFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/CommentFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/CommentMangaFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/CommentMangaFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/factories/MangaFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/MangaFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_10_201902_create_comments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_10_201902_create_comments_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_10_201929_create_chapters_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_10_201929_create_chapters_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_10_202005_create_mangas_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_10_202005_create_mangas_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +185,7 @@
       <workItem from="1602426782996" duration="599000" />
       <workItem from="1602433214341" duration="7852000" />
       <workItem from="1602463203142" duration="11002000" />
-      <workItem from="1602509242648" duration="2114000" />
+      <workItem from="1602509242648" duration="4377000" />
     </task>
     <servers />
   </component>

@@ -4,10 +4,9 @@
 namespace App\Repositories;
 
 
-use App\Models\CommentManga;
 use App\Models\Manga;
 
-class MangaRepository extends ServicesAppRepository
+class MangaRepository extends AppRepository
 {
    public function __construct(Manga $model)
    {

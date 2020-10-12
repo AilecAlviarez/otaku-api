@@ -1,9 +1,10 @@
 <?php
 
 
-namespace App\Repositories;
+namespace App\Services;
 
 
+use App\Repositories\MangaRepository;
 use App\Services\ApiService;
 
 class MangaService extends ApiService

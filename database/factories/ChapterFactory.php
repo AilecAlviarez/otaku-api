@@ -28,7 +28,7 @@ class ChapterFactory extends Factory
             'chapter_description'=>$this->faker->paragraph(1),
             'chapter_date'=>$this->faker->date('Y-m-d'),
             'image_id'=>Image::all()->random()->image_id,
-            'comment_id'=>Comment::all()->random()->comment_id
+
         ];
     }
 }

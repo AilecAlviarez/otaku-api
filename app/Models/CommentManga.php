@@ -9,9 +9,9 @@ class CommentManga extends Model
 {
     use HasFactory;
     protected $primaryKey="comment_id";
-    protected $fillable=["comment","reader_id"];
+    protected $fillable=["comment","reader_id",'manga_id'];
     public function Manga(){
-        return $this->belongsTo(Manga::class,'comment_id',$this->primaryKey);
+        return $this->hasOne(Manga::class,'manga_id','manga_id');
     }
 
 }

@@ -9,9 +9,9 @@ class Comment extends Model
 {
     use HasFactory;
     protected $primaryKey="comment_id";
-    protected $fillable=["comment","reader_id"];
+    protected $fillable=["comment","reader_id",'chapter_id'];
   public function chapter(){
-      return $this->belongsTo(Chapter::class,'comment_id','comment_id');
+      return $this->hasOne(Chapter::class,'chapter_id','chapter_id');
   }
 
 }

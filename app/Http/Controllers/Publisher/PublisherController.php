@@ -5,7 +5,11 @@ namespace App\Http\Controllers\Publisher;
 use App\Http\Controllers\ApiController;
 use App\Http\Controllers\Controller;
 use App\Models\Publisher;
+
+
 use App\Services\ApiService;
+use App\Services\ChapterService;
+use App\Services\MangaService;
 use App\Services\PublisherService;
 use Illuminate\Http\Request;
 
@@ -16,9 +20,9 @@ class PublisherController extends ApiController
         'user_password'=>'required|min:6',
         'user_email'=>'required'
     ];
-    public function __construct(PublisherService $service)
+    public function __construct(PublisherService $service,ChapterService $chapterService,MangaService $mangaService)
     {
-        parent::__construct($service);
+        parent::__construct($service,$chapterService,$mangaService);
         $this->registerRules($this->rules);
     }
 

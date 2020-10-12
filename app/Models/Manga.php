@@ -9,12 +9,12 @@ class Manga extends Model
 {
     use HasFactory;
     protected $primaryKey="manga_id";
-    protected $fillable=['author_id','chapter_id','manga_description','manga_date','publisher_id','comment_id'];
+    protected $fillable=['author_id','chapter_id','manga_description','manga_date','publisher_id'];
     public function Publisher(){
         return $this->hasOne(Publisher::class,'user_id','publisher_id');
     }
     public function Comments(){
-        return $this->hasMany(CommentManga::class,'comment_id','comment_id');
+        return $this->hasMany(CommentManga::class,'manga_id','manga_id');
     }
     public function Author(){
         return $this->hasOne(Author::class,'author_id','author_id');

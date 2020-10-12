@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\CommentManga;
+use App\Models\Manga;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -24,7 +25,8 @@ class CommentMangaFactory extends Factory
     {
         return [
             "comment"=>$this->faker->paragraph(1),
-            "reader_id"=>User::all()->random()->user_id
+            "reader_id"=>User::all()->random()->user_id,
+            'manga_id'=>Manga::all()->random()->manga_id
         ];
     }
 }
