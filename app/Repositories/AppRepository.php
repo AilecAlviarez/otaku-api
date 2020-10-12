@@ -23,6 +23,10 @@ class AppRepository implements IRepository
         $model->delete();
         return $this->responseSuccesfully($model,200);
   }
+ public function deleteById($id){
+      $this->model->delete($id);
+
+ }
   public function showOne(Model $instance)
   {
       // TODO: Implement showOne() method.

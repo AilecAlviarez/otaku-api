@@ -83,6 +83,7 @@ class PublisherController extends ApiController
      */
     public function destroy(Publisher $publisher)
     {
-        return $this->service->deleteOne($publisher);
+
+        return $this->service->deletePublisher($publisher);
     }
 }

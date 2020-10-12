@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use App\Models\Author;
 use App\Models\Chapter;
 use App\Models\Comment;
+use App\Models\CommentManga;
 use App\Models\Image;
 use App\Models\Manga;
 use App\Models\User;
@@ -27,11 +28,13 @@ class DatabaseSeeder extends Seeder
         Image::truncate();
         Comment::truncate();
         Chapter::truncate();
+        CommentManga::truncate();
         Manga::truncate();
         User::factory(100)->create();
         Author::factory(20)->create();
         Image::factory(400)->create();
         Comment::factory(500)->create();
+        CommentManga::factory(200)->create();
         Chapter::factory(960)->create();
         Manga::factory(50)->create();
 

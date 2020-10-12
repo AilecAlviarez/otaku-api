@@ -21,6 +21,14 @@ class CreateCommentsTable extends Migration
             $table->foreign('reader_id')->on('users')->references('user_id');
             $table->timestamps();
         });
+        Schema::create('comment_mangas', function (Blueprint $table) {
+            $table->id('comment_id');
+
+            $table->unsignedBigInteger('reader_id');
+            $table->string("comment");
+            $table->foreign('reader_id')->on('users')->references('user_id');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -31,5 +39,6 @@ class CreateCommentsTable extends Migration
     public function down()
     {
         Schema::dropIfExists('comments');
+        Schema::dropIfExists('comment_mangas');
     }
 }

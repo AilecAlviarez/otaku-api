@@ -13,9 +13,7 @@ class Reader extends User
     public function reader_mangas(){
         return $this->belongsToMany(Manga::class,'reader_manga','user_id','manga_id');
     }
-    public function Comments(){
-        return $this->hasMany(Comment::class,'reader_id',$this->primaryKey);
-    }
+
     public static function booted(){
         parent::addGlobalScope(new ReaderScope);
     }
