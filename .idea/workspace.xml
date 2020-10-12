@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c03c29dc-3a58-415f-aa5f-0558f19305d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Role.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_12_201915_create_roles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_12_201915_create_roles_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +174,7 @@
       <workItem from="1602433214341" duration="7852000" />
       <workItem from="1602463203142" duration="11002000" />
       <workItem from="1602509242648" duration="4377000" />
-      <workItem from="1602530725564" duration="3392000" />
+      <workItem from="1602530725564" duration="5656000" />
     </task>
     <servers />
   </component>
@@ -187,14 +190,18 @@
       <screen x="0" y="0" width="1366" height="731" />
     </state>
     <state x="413" y="123" width="528" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.731@0.0.1366.731" timestamp="1602477533584" />
-    <state x="463" y="123" width="428" height="484" key="FileChooserDialogImpl" timestamp="1602532394496">
+    <state x="463" y="123" width="428" height="484" key="FileChooserDialogImpl" timestamp="1602534592202">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state x="463" y="123" width="428" height="484" key="FileChooserDialogImpl/0.0.1366.731@0.0.1366.731" timestamp="1602532394496" />
+    <state x="463" y="123" width="428" height="484" key="FileChooserDialogImpl/0.0.1366.731@0.0.1366.731" timestamp="1602534592202" />
     <state x="449" y="86" width="497" height="558" key="NewPhpClassDialog" timestamp="1602533475052">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
     <state x="449" y="86" width="497" height="558" key="NewPhpClassDialog/0.0.1366.731@0.0.1366.731" timestamp="1602533475052" />
+    <state x="343" y="52" width="672" height="678" key="search.everywhere.popup" timestamp="1602538313986">
+      <screen x="0" y="0" width="1366" height="731" />
+    </state>
+    <state x="343" y="52" width="672" height="678" key="search.everywhere.popup/0.0.1366.731@0.0.1366.731" timestamp="1602538313986" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

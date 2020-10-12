@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Role;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
@@ -27,7 +28,7 @@ class UserFactory extends Factory
             'user_email' => $this->faker->unique()->safeEmail,
             'email_verified_at' => now(),
             'user_password' => bcrypt('password'), // password
-            'remember_token' => Str::random(10),
+            'remember_token' => Str::random(10)
         ];
     }
 }

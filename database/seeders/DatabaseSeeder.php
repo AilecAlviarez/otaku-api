@@ -8,6 +8,7 @@ use App\Models\Comment;
 use App\Models\CommentManga;
 use App\Models\Image;
 use App\Models\Manga;
+use App\Models\Role;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
@@ -30,7 +31,19 @@ class DatabaseSeeder extends Seeder
         Chapter::truncate();
         CommentManga::truncate();
         Manga::truncate();
-        User::factory(100)->create();
+        Role::truncate();
+
+        DB::table('roles')->insert(['role_name'=>'admin']);
+        DB::table('roles')->insert(['role_name'=>'regular']);
+
+        DB::table('roles')->insert(['role_name'=>'moderator']);
+
+
+        User::factory(100)->create()->each(function ($user){
+            $roles=Role::all()->random(mt_rand(1,3))->pluck('role_id');
+            $user->roles()->attach($roles);
+
+        });
         Author::factory(20)->create();
         Image::factory(400)->create();
         Chapter::factory(960)->create();
