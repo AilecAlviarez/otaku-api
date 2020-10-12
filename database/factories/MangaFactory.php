@@ -5,6 +5,7 @@ namespace Database\Factories;
 use App\Models\Author;
 use App\Models\Chapter;
 use App\Models\Comment;
+use App\Models\CommentManga;
 use App\Models\Manga;
 use App\Models\Publisher;
 use App\Models\User;
@@ -32,7 +33,7 @@ class MangaFactory extends Factory
             'manga_description'=>$this->faker->paragraph(1),
             'manga_date'=>$this->faker->date('Y-m-d'),
             'publisher_id'=>User::all()->random()->user_id,
-            'comment_id'=>Comment::all()->random()->comment_id
+            'comment_id'=>CommentManga::all()->random()->comment_id
         ];
     }
 }

@@ -27,6 +27,12 @@ class AppRepository implements IRepository
       $this->model->delete($id);
 
  }
+ public function updateInstance($instance,$key,$value){
+      $instance->update([$key=>$value]);
+ }
+ public function findById($id){
+  return $this->model->findOrFail($id);
+ }
   public function showOne(Model $instance)
   {
       // TODO: Implement showOne() method.

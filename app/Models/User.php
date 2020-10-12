@@ -26,6 +26,9 @@ class User extends Authenticatable implements JWTSubject
     public function Comments(){
         return $this->hasMany(Comment::class,'reader_id',$this->primaryKey);
     }
+    public function Comments_Manga(){
+        return $this->hasMany(CommentManga::class,'reader_id',$this->primaryKey);
+    }
 
     /**
      * The attributes that should be hidden for arrays.

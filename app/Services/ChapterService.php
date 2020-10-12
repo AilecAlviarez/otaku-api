@@ -13,4 +13,8 @@ public function __construct(ChapterRepository $repository)
 {
     parent::__construct($repository);
 }
+public function removeComment($id){
+     $chapter=$this->repository->findById($id);
+     $this->repository->updateInstance($chapter,'comment_id',null);
+}
 }

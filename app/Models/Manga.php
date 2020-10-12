@@ -14,7 +14,7 @@ class Manga extends Model
         return $this->hasOne(Publisher::class,'user_id','publisher_id');
     }
     public function Comments(){
-        return $this->hasMany(Comment::class,'comment_id','comment_id');
+        return $this->hasMany(CommentManga::class,'comment_id','comment_id');
     }
     public function Author(){
         return $this->hasOne(Author::class,'author_id','author_id');
