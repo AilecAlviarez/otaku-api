@@ -22,12 +22,16 @@ class User extends Authenticatable implements JWTSubject
         'user_name',
         'user_email',
         'user_password',
+
     ];
     public function Comments(){
         return $this->hasMany(Comment::class,'reader_id',$this->primaryKey);
     }
     public function Comments_Manga(){
         return $this->hasMany(CommentManga::class,'reader_id',$this->primaryKey);
+    }
+    public function Roles(){
+        return $this->belongsToMany(Role::class,'user_role','user_id','role_id');
     }
 
     /**
