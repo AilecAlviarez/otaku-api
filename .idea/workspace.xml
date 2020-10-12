@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c03c29dc-3a58-415f-aa5f-0558f19305d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Publisher/PublisherController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Publisher/PublisherController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/MangaService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/MangaService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/PublisherService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/PublisherService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_10_202005_create_mangas_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_10_202005_create_mangas_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/AppRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/AppRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +143,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../apiLaravel" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -174,7 +171,7 @@
       <workItem from="1602433214341" duration="7852000" />
       <workItem from="1602463203142" duration="11002000" />
       <workItem from="1602509242648" duration="4377000" />
-      <workItem from="1602530725564" duration="1258000" />
+      <workItem from="1602530725564" duration="2101000" />
     </task>
     <servers />
   </component>
@@ -190,10 +187,10 @@
       <screen x="0" y="0" width="1366" height="731" />
     </state>
     <state x="413" y="123" width="528" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.731@0.0.1366.731" timestamp="1602477533584" />
-    <state x="463" y="123" width="428" height="484" key="FileChooserDialogImpl" timestamp="1602470285043">
+    <state x="463" y="123" width="428" height="484" key="FileChooserDialogImpl" timestamp="1602532394496">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state x="463" y="123" width="428" height="484" key="FileChooserDialogImpl/0.0.1366.731@0.0.1366.731" timestamp="1602470285043" />
+    <state x="463" y="123" width="428" height="484" key="FileChooserDialogImpl/0.0.1366.731@0.0.1366.731" timestamp="1602532394496" />
     <state x="449" y="86" width="497" height="558" key="NewPhpClassDialog" timestamp="1602510651502">
       <screen x="0" y="0" width="1366" height="731" />
     </state>

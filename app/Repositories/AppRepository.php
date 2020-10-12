@@ -48,7 +48,9 @@ class AppRepository implements IRepository
   public function store($request)
   {
       // TODO: Implement store() method.
+
       $store=$this->model->create($request->all());
+
       return $this->responseSuccesfully($store);
 
   }
