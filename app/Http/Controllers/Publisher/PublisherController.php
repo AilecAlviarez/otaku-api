@@ -12,13 +12,14 @@ use Illuminate\Http\Request;
 class PublisherController extends ApiController
 {
     public $rules=[
-      'username'=>'required|string'  ,
+        'user_name'=>'required|string'  ,
         'user_password'=>'required|min:6',
         'user_email'=>'required'
     ];
     public function __construct(PublisherService $service)
     {
         parent::__construct($service);
+        $this->registerRules($this->rules);
     }
 
     /**
@@ -69,6 +70,8 @@ class PublisherController extends ApiController
     {
         $validator=$this->validateRequest($request);
         return (!$validator)?$this->service->updateOne($publisher,$request):$validator;
+
+
 
     }
 

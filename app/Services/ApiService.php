@@ -26,7 +26,7 @@ class ApiService
     public function deleteOne($instance){
         return $this->repository->deleteOne($instance);
     }
-    public function updateOne($instance,Request $request){
+    public function updateOne($instance, $request){
         return $this->repository->updateOne($instance,$request);
     }
     public function store($request){

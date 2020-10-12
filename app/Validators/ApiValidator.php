@@ -12,7 +12,7 @@ trait ApiValidator
 {
     use ApiResponser;
     public $rules;
-    public function __construct($rules)
+    public function registerRules($rules)
     {
         $this->rules=$rules;
     }
@@ -22,7 +22,7 @@ trait ApiValidator
         if($validator->fails()){
             return $this->validatioError($validator->errors());
         }
-        return true;
+        return false;
     }
     public function validateRequest($request)
     {
@@ -30,7 +30,7 @@ trait ApiValidator
         if($validator->fails()){
             return $this->validatioError($validator->errors());
         }
-        return true;
+        return false;
     }
 
 }

@@ -35,17 +35,18 @@ class AppRepository implements IRepository
       $collection=$this->model->all();
       return $this->responseSuccesfully($collection);
   }
-  public function store(Request $request)
+  public function store($request)
   {
       // TODO: Implement store() method.
       $store=$this->model->create($request->all());
       return $this->responseSuccesfully($store);
 
   }
-  public function updateOne(Model $model, Request $request)
+  public function updateOne(Model $instance,  $request)
   {
       // TODO: Implement updateOne() method.
-      $model->update($request->all());
-      return $this->responseSuccesfully($model);
+      $instance->update($request->all());
+
+      return $this->responseSuccesfully($instance);
   }
 }
