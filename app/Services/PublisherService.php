@@ -13,14 +13,14 @@ class PublisherService extends ApiService
 {
     use ApiResponser;
 
-  public $chapterService;
+
   public $mangaService;
-   public function __construct(PublisherRepository $repository,ChapterService $chapterService,MangaService $mangaService)
+   public function __construct(PublisherRepository $repository,MangaService $mangaService)
    {
 
        parent::__construct($repository);
-       $this->chapterService=$chapterService;
        $this->mangaService=$mangaService;
+
 
 
    }
@@ -28,26 +28,33 @@ class PublisherService extends ApiService
 
         $comments=$publisher->comments;
        $commentsManga=$publisher->comments_manga;
-      
-       //$this->deleteComments($comments);
-       //$this->deleteCommentsManga($commentsManga);
+       $mangas=$publisher->mangas;
 
-        //return $this->deleteOne($publisher);
-       return $this->responseSuccesfully($commentsManga);
+       $this->deleteComments($comments);
+       $this->deleteCommentsManga($commentsManga);
+       $this->removePublisherManga($mangas);
+
+       return $this->deleteOne($publisher);
+      //return $this->responseSuccesfully($mangas);
+   }
+   public function removePublisherManga($mangas){
+       foreach ($mangas as $manga){
+           $this->mangaService->removePublisher($manga);
+
+       }
+
    }
    public function deleteComments($comments){
 
 
        foreach ($comments as $comment){
-          $chapter=$comment->chapter->chapter_id;
-          $this->chapterService->removeComment($chapter);
+         $comment->delete();
        }
 
    }
    public function deleteCommentsManga($comments){
        foreach ($comments as $comment){
-           $manga=$comment->manga->manga_id;
-           $this->mangaService->removeComment($manga);
+           $comment->delete();
        }
    }
 

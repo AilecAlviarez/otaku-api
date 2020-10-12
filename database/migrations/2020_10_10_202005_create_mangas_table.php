@@ -17,7 +17,7 @@ class CreateMangasTable extends Migration
             $table->id('manga_id');
             $table->unsignedBigInteger("chapter_id");
             $table->unsignedBigInteger("author_id");
-            $table->unsignedBigInteger("publisher_id");
+            $table->unsignedBigInteger("publisher_id")->nullable();
 
             $table->string("manga_description");
             $table->date("manga_date");

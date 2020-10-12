@@ -20,9 +20,9 @@ class PublisherController extends ApiController
         'user_password'=>'required|min:6',
         'user_email'=>'required'
     ];
-    public function __construct(PublisherService $service,ChapterService $chapterService,MangaService $mangaService)
+    public function __construct(PublisherService $service,MangaService $mangaService)
     {
-        parent::__construct($service,$chapterService,$mangaService);
+        parent::__construct($service,$mangaService);
         $this->registerRules($this->rules);
     }
 

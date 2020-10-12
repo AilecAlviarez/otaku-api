@@ -18,4 +18,7 @@ class MangaService extends ApiService
         $manga=$this->repository->findById($id);
         $this->repository->updateInstance($manga,'comment_id',null);
     }
+    public function removePublisher($model){
+        $this->repository->updateInstance($model,'publisher_id',null);
+    }
 }
