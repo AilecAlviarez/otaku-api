@@ -17,4 +17,5 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-Route::apiResource('publisher',\App\Http\Controllers\Publisher\PublisherController::class)->except(['edit','create']);
+Route::apiResource('publisher',\App\Http\Controllers\Publisher\PublisherController::class)->except(['edit','create','store']);
+Route::apiResource('users',\App\Http\Controllers\User\UserController::class)->except(['edit','create']);

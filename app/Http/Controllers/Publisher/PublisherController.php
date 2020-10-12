@@ -38,17 +38,7 @@ class PublisherController extends ApiController
 
 
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        $validator=$this->validateRequest($request);
-       return (!$validator)?$this->service->store($request):$validator;
-    }
+
 
     /**
      * Display the specified resource.
