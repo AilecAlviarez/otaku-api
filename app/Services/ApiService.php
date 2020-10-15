@@ -16,6 +16,17 @@ class ApiService
         $this->repository=$repository;
         $this->model=$this->repository->model;
     }
+    public function getCollection(){
+        return $this->repository->model->all();
+    }
+    public function getRelations($collections,$property){
+        return $this->repository->getRelations($collections,$property);
+
+    }
+    public function getRelationInstance($instance,$property){
+        return $this->repository->getRelationsIntance($instance,$property);
+    }
+
 
     public function showAll(){
         return $this->repository->showAll();

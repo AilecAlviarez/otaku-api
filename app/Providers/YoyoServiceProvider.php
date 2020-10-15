@@ -8,6 +8,7 @@ use App\Repositories\AppRepository;
 use App\Services\ApiService;
 use Illuminate\Cache\Repository;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Collection;
 
 class YoyoServiceProvider extends ServiceProvider
 {
@@ -36,6 +37,6 @@ class YoyoServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+
     }
 }

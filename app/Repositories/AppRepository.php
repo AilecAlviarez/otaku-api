@@ -54,6 +54,25 @@ class AppRepository implements IRepository
       return $this->responseSuccesfully($store);
 
   }
+public function getRelations($collections,$property){
+
+    $collections->map(function($instance,$property){
+        $instance=$instance->roles;
+    });
+    return $collections;
+
+}
+public function getRelationCollection($collections,$property){
+     $collections->map(function($instance,$property){
+        $instance=$instance->roles;
+     });
+     return $collections;
+}
+public function getRelationIntance($instance ,$property){
+      if($instance[$property]!=null){
+          return $instance[$property];
+      }
+}
   public function updateOne(Model $instance,  $request)
   {
       // TODO: Implement updateOne() method.

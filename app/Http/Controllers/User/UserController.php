@@ -30,7 +30,9 @@ class UserController extends ApiController
 
     public function index()
     {
-        return $this->service->showAll();
+       $users=$this->service->getCollection();
+       $user=$this->service->getRelations($users,'roles');
+       return $this->responseSuccesfully($user);
     }
 
 
