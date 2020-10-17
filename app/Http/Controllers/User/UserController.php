@@ -17,15 +17,17 @@ class UserController extends ApiController
      *
      * @return \Illuminate\Http\Response
      */
+
     public $rules=[
         'user_name'=>'required|string'  ,
         'user_password'=>'required|min:6',
-        'user_email'=>'required',
-        'roles'=>'required'
+        'user_email'=>'required|email',
+        'roles'=>'required|array|min:1',
+        'roles.*'=>'required|numeric|digits_between:1,3'
+
     ];
-    public $rulesRole=[
-        'role_id'=>'required|digits_between:1,3'
-    ];
+
+
     public function __construct(UserService $service)
     {
         parent::__construct($service);
@@ -50,12 +52,12 @@ class UserController extends ApiController
      */
     public function store(Request $request)
     {
-        $validator=$this->validateRequest($request);
-        if(!$validator){
-            $validateRole=$this->validateData($request,$this->rulesRole,'roles');
-            return (!$validateRole)?$this->service->store($request):$validateRole;
-        }
-        return $validator;
+        $validator=$this->validateData($request,$this->rules);
+
+
+            return (!$validator)?$this->service->store($request):$validator;
+
+      //return $this->responseSuccesfully($request->roles);
     }
 
     /**
