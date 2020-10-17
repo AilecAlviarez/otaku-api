@@ -5,12 +5,14 @@ namespace App\Services;
 
 
 use App\Repositories\AppRepository;
+use App\Traits\ApiResponser;
 use Illuminate\Database\Eloquent\Model;
 
 class ApiService
 {
     protected $repository;
     protected $model;
+    use ApiResponser;
     public function __construct(AppRepository $repository)
     {
         $this->repository=$repository;
