@@ -4,10 +4,7 @@
     <list default="true" id="c03c29dc-3a58-415f-aa5f-0558f19305d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/YoyoServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/YoyoServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Repositories/AppRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/AppRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/ApiService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/ApiService.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +173,9 @@
       <workItem from="1602463203142" duration="11002000" />
       <workItem from="1602509242648" duration="4377000" />
       <workItem from="1602530725564" duration="6437000" />
-      <workItem from="1602795679692" duration="4984000" />
+      <workItem from="1602795679692" duration="5411000" />
+      <workItem from="1602881349857" duration="1238000" />
+      <workItem from="1602948493023" duration="1217000" />
     </task>
     <servers />
   </component>

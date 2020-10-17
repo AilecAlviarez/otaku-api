@@ -63,8 +63,8 @@ public function getRelations($collections,$property){
 
 }
 public function getRelationCollection($collections,$property){
-     $collections->map(function($instance,$property){
-        $instance=$instance->roles;
+     $collections->map(function($instance) use ($property){
+        $instance=$instance[$property];
      });
      return $collections;
 }

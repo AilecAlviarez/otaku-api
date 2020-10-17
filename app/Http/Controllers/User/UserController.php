@@ -4,6 +4,7 @@ namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\ApiController;
 use App\Http\Controllers\Controller;
+use App\Models\Role;
 use App\Models\User;
 use App\Services\ApiService;
 use App\Services\UserService;
@@ -19,7 +20,11 @@ class UserController extends ApiController
     public $rules=[
         'user_name'=>'required|string'  ,
         'user_password'=>'required|min:6',
-        'user_email'=>'required'
+        'user_email'=>'required',
+        'roles'=>'required|array'
+    ];
+    public $rulesRole=[
+        'role'=>'required|number|digits_between:1,'.(string) Role::all()->count()
     ];
     public function __construct(UserService $service)
     {
@@ -46,7 +51,11 @@ class UserController extends ApiController
     public function store(Request $request)
     {
         $validator=$this->validateRequest($request);
-        return (!$validator)?$this->service->store($request):$validator;
+        if(!$validator){
+            $validateRole=$this->validateData($request['roles'],$this->rulesRole);
+            return (!$validateRole)?$this->service->store($request):$validateRole;
+        }
+        return $validator;
     }
 
     /**
