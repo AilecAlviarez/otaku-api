@@ -15,7 +15,7 @@ class PublisherScope implements Scope
      {
          // TODO: Implement apply() method.
          $builder->has('mangas');
-         $model->roles()->whereBetween('role_id',[1,3]);
+        // $model->roles()->whereBetween('role_id',[1,3]);
 
      }
 }
