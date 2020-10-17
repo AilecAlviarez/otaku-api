@@ -21,10 +21,10 @@ class UserController extends ApiController
         'user_name'=>'required|string'  ,
         'user_password'=>'required|min:6',
         'user_email'=>'required',
-        'roles'=>'required|array'
+        'roles'=>'required'
     ];
     public $rulesRole=[
-        'role'=>'required|number|digits_between:1,'.(string) Role::all()->count()
+        'role_id'=>'required|digits_between:1,3'
     ];
     public function __construct(UserService $service)
     {
@@ -52,7 +52,7 @@ class UserController extends ApiController
     {
         $validator=$this->validateRequest($request);
         if(!$validator){
-            $validateRole=$this->validateData($request['roles'],$this->rulesRole);
+            $validateRole=$this->validateData($request,$this->rulesRole,'roles');
             return (!$validateRole)?$this->service->store($request):$validateRole;
         }
         return $validator;

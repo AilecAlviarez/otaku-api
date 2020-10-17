@@ -17,8 +17,8 @@ trait ApiValidator
         $this->rules=$rules;
     }
 
-    public function validateData($request,$rules){
-        $validator=Validator::make($request->all(),$rules);
+    public function validateData($request,$rules,$property){
+        $validator=Validator::make($request[$property],$rules);
         if($validator->fails()){
             return $this->validatioError($validator->errors());
         }
