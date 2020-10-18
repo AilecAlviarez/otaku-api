@@ -34,7 +34,7 @@ class MangaFactory extends Factory
             'chapter_id'=>Chapter::all()->random()->chapter_id,
             'manga_description'=>$this->faker->paragraph(1),
             'manga_date'=>$this->faker->date('Y-m-d'),
-            'publisher_id'=>User::all()->random()->user_id
+            'publisher_id'=>User::with('publishers')->whereNotNull('user_id')->inRandomOrder()->first()->user_id
 
         ];
     }

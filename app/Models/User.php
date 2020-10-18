@@ -33,6 +33,10 @@ class User extends Authenticatable implements JWTSubject
     public function Roles(){
         return $this->belongsToMany(Role::class,'user_role','user_id','role_id');
     }
+    public function Publishers(){
+        return $this->belongsToMany(User::class,'user_role','user_id','role_id')->wherePivotIn('role_id',[1,2]);
+
+    }
 
     /**
      * The attributes that should be hidden for arrays.
