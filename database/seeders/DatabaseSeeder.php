@@ -34,9 +34,10 @@ class DatabaseSeeder extends Seeder
         Role::truncate();
 
         DB::table('roles')->insert(['role_name'=>'admin']);
+        DB::table('roles')->insert(['role_name'=>'moderator']);
         DB::table('roles')->insert(['role_name'=>'regular']);
 
-        DB::table('roles')->insert(['role_name'=>'moderator']);
+
 
 
         User::factory(100)->create()->each(function ($user){

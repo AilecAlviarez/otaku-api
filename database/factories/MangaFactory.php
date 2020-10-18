@@ -8,6 +8,7 @@ use App\Models\Comment;
 use App\Models\CommentManga;
 use App\Models\Manga;
 use App\Models\Publisher;
+use App\Models\Role;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -28,11 +29,12 @@ class MangaFactory extends Factory
     public function definition()
     {
         return [
+
             'author_id'=>Author::all()->random()->author_id,
             'chapter_id'=>Chapter::all()->random()->chapter_id,
             'manga_description'=>$this->faker->paragraph(1),
             'manga_date'=>$this->faker->date('Y-m-d'),
-            'publisher_id'=>User::all()->random()->user_id,
+            'publisher_id'=>User::all()->random()->user_id
 
         ];
     }
