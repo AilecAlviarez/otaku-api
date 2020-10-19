@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c03c29dc-3a58-415f-aa5f-0558f19305d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Manga/MangaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Manga/MangaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/MangaService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/MangaService.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +177,7 @@
       <workItem from="1602881349857" duration="1238000" />
       <workItem from="1602948493023" duration="11590000" />
       <workItem from="1602981459883" duration="8398000" />
-      <workItem from="1603064076636" duration="1030000" />
+      <workItem from="1603064076636" duration="1826000" />
     </task>
     <servers />
   </component>
@@ -195,10 +197,10 @@
       <screen x="0" y="0" width="1366" height="731" />
     </state>
     <state x="463" y="123" width="428" height="484" key="FileChooserDialogImpl/0.0.1366.731@0.0.1366.731" timestamp="1602956756835" />
-    <state x="449" y="86" width="497" height="558" key="NewPhpClassDialog" timestamp="1602533475052">
+    <state x="449" y="86" width="497" height="558" key="NewPhpClassDialog" timestamp="1603069620774">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
-    <state x="449" y="86" width="497" height="558" key="NewPhpClassDialog/0.0.1366.731@0.0.1366.731" timestamp="1602533475052" />
+    <state x="449" y="86" width="497" height="558" key="NewPhpClassDialog/0.0.1366.731@0.0.1366.731" timestamp="1603069620774" />
     <state x="343" y="52" width="672" height="678" key="search.everywhere.popup" timestamp="1602538313986">
       <screen x="0" y="0" width="1366" height="731" />
     </state>
