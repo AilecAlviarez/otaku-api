@@ -21,4 +21,5 @@ class MangaService extends ApiService
     public function removePublisher($model){
         $this->repository->updateInstance($model,'publisher_id',null);
     }*/
+
 }

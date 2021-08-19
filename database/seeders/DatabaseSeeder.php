@@ -8,6 +8,7 @@ use App\Models\Comment;
 use App\Models\CommentManga;
 use App\Models\Image;
 use App\Models\Manga;
+use App\Models\ProductDos;
 use App\Models\Role;
 use App\Models\User;
 use Illuminate\Database\Seeder;
@@ -45,6 +46,7 @@ class DatabaseSeeder extends Seeder
             $user->roles()->attach($roles);
 
         });
+        ProductDos::factory(23)->create();
         Author::factory(20)->create();
         Image::factory(400)->create();
         Chapter::factory(960)->create();

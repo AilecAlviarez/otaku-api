@@ -12,4 +12,7 @@ class UserRepository extends AppRepository
   {
       parent::__construct($model);
   }
+  public function method(){
+      
+  }
 }

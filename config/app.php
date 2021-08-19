@@ -178,6 +178,8 @@ return [
         //Providers app
         Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
 
+
+
     ],
 
     /*

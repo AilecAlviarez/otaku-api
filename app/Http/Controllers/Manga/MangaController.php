@@ -12,14 +12,15 @@ use App\Models\User;
 use App\Services\ApiService;
 use App\Services\MangaService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class MangaController extends ApiController
 {
-    public $rules=['author_id'=>'required|int|min:1|max:'.(string)Author::all()->count(),
-        'chapter_id'=>'required|int|min:1|max:'.(string)Chapter::all()->count(),
+    public $rules=['author_id'=>'required|int|min:1|max:20',
+        'chapter_id'=>'required|int|min:1|max:20',
         'manga_description'=>'required|string',
         'manga_date'=>'required|date',
-        'publisher_id'=>'required|int'.(string)User::with('publishers')->count()
+        'publisher_id'=>'required|int'
     ];
     public function __construct(MangaService $service)
     {
@@ -34,7 +35,17 @@ class MangaController extends ApiController
      */
     public function index()
     {
-        return $this->service->showAll();
+        /*$collections=$this->service->getCollection();
+       $chapters= $this->service->getRelations($collections,'chapters');
+        return $this->responseSuccesfully($collections[0]->chapters);*/
+     /*  $data=DB::table('mangas')->join('users','mangas.publisher_id','=','users.user_id')
+           ->select('users.*')
+           ->distinct()->get();*/
+//        $first=DB::table('mangas')->rightJoin('authors','mangas.author_id','=','authors.author_id')->get();
+        $data=$this->service->getCollection();
+      $collections=$this->service->getCollection();
+      //$data=$this->service->getRelations($collections,'publisher');
+        return $this->responseSuccesfully($data);
     }
 
 

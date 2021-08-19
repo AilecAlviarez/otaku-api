@@ -4,7 +4,13 @@
     <list default="true" id="c03c29dc-3a58-415f-aa5f-0558f19305d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Manga/MangaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Manga/MangaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/YoyoServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/YoyoServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/MangaRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/MangaRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/UserRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Services/MangaService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/MangaService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,9 +149,17 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../apiLaravelWork" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Descargas/otaku-back" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -177,58 +191,18 @@
       <workItem from="1602881349857" duration="1238000" />
       <workItem from="1602948493023" duration="11590000" />
       <workItem from="1602981459883" duration="8398000" />
-      <workItem from="1603064076636" duration="1826000" />
+      <workItem from="1603064076636" duration="2821000" />
+      <workItem from="1603895912264" duration="8571000" />
+      <workItem from="1604770615123" duration="6077000" />
+      <workItem from="1605029813349" duration="1521000" />
+      <workItem from="1605104357286" duration="289000" />
+      <workItem from="1607724060222" duration="3770000" />
+      <workItem from="1607950310705" duration="40000" />
+      <workItem from="1622077974587" duration="549000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="409" y="79" width="530" height="573" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602511040085">
-      <screen x="0" y="0" width="1366" height="731" />
-    </state>
-    <state x="409" y="79" width="530" height="573" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.731@0.0.1366.731" timestamp="1602511040085" />
-    <state x="413" y="123" width="528" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602800593308">
-      <screen x="0" y="0" width="1366" height="731" />
-    </state>
-    <state x="413" y="123" width="528" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.731@0.0.1366.731" timestamp="1602800593308" />
-    <state x="463" y="123" width="428" height="484" key="FileChooserDialogImpl" timestamp="1602956756835">
-      <screen x="0" y="0" width="1366" height="731" />
-    </state>
-    <state x="463" y="123" width="428" height="484" key="FileChooserDialogImpl/0.0.1366.731@0.0.1366.731" timestamp="1602956756835" />
-    <state x="449" y="86" width="497" height="558" key="NewPhpClassDialog" timestamp="1603069620774">
-      <screen x="0" y="0" width="1366" height="731" />
-    </state>
-    <state x="449" y="86" width="497" height="558" key="NewPhpClassDialog/0.0.1366.731@0.0.1366.731" timestamp="1603069620774" />
-    <state x="343" y="52" width="672" height="678" key="search.everywhere.popup" timestamp="1602538313986">
-      <screen x="0" y="0" width="1366" height="731" />
-    </state>
-    <state x="343" y="52" width="672" height="678" key="search.everywhere.popup/0.0.1366.731@0.0.1366.731" timestamp="1602538313986" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/Http/Controllers/Controller.php</url>
-          <line>4</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/Http/Controllers/ApiController.php</url>
-          <line>9</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php-line-method">
-          <url>file://$PROJECT_DIR$/app/Repositories/UserRepository.php</url>
-          <line>10</line>
-          <properties>
-            <option name="className" value="\App\Repositories\UserRepository" />
-            <option name="methodName" value="__construct" />
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

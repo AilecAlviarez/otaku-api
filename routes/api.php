@@ -19,3 +19,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 Route::apiResource('publisher',\App\Http\Controllers\Publisher\PublisherController::class)->except(['edit','create','store']);
 Route::apiResource('users',\App\Http\Controllers\User\UserController::class)->except(['edit','create']);
+Route::apiResource('mangas',\App\Http\Controllers\Manga\MangaController::class)->except(['edit','create']);
+Route::apiResource('products',\App\Http\Controllers\ProductController::class)->only(['index']);
